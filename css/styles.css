@@ -9,6 +9,8 @@ body {
     margin: auto;
 }
 
+/* Header */
+
 .header-block {
     display: grid;
     grid-template-areas: 'one one one two two two'
@@ -115,3 +117,18 @@ body {
     border-radius: 20px;
     box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
 }
+
+/* Header */
+
+/* Menu 1 */
+
+
+
+/* Menu 1 */
+
+/* Middle */
+
+
+
+
+/* Middle */
