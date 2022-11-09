@@ -144,7 +144,13 @@ body {
 
 .one__one {
     grid-area: home;
+    opacity: 50%;
 }
+
+.menu .one__one {
+    opacity: 100%;
+}
+
 
 .two__one {
     grid-area: offer;
@@ -483,12 +489,20 @@ a:hover {
     background: white;
 }
 
+
+
 .menu__contacts .four__one{
     opacity: 100%;
 }
 
+
 .menu__contacts .one__one{
     opacity: 50%;
+}
+
+.one__one:hover {
+    color:#000;
+    opacity: 100%;
 }
 
 /* Menu 2 */
