@@ -14,7 +14,7 @@ body {
 
 /* Header */
 
-.header-block {
+.header__block {
     display: grid;
     grid-template-areas: 
     'one one one two two two'
@@ -23,7 +23,7 @@ body {
     grid-template-columns: repeat(6, 1fr);
 }
 
-.header-block__blue {
+.header__block__blue {
     grid-area: one;
 
     height: 30rem;
@@ -37,18 +37,18 @@ body {
     background-position: 95% 100%;
 }
 
-.header-block__blue__flex {
+.header__block__blue__flex {
     width: 50%;
     margin: auto;
 }
 
-.title--black {
+.header__title__black {
     margin-top: 30%;
     margin-bottom: 0%;
     font-size: xx-large;
 }
 
-.paragraph__small--black {
+.header__paragraph__small--black {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
     opacity: 60%;
@@ -58,7 +58,7 @@ body {
     margin-bottom: 0%;
 }
 
-.paragraph__small--white{
+.header__paragraph__small--white{
     color: white;
 }
 
@@ -77,7 +77,7 @@ body {
 
 
 
-.header-block__orange {
+.header__block__orange {
     grid-area: two;
     background: #F17949;
 
@@ -89,7 +89,7 @@ body {
     text-align: center;
 }
 
-.header-block__yellow {
+.header__block__yellow {
     grid-area: three;
     background: #FFB939;
 
@@ -101,13 +101,13 @@ body {
     text-align: center;
 }
 
-.title--white {
+.header__title__white {
     margin-top: 0%;
     color: white;
     font-size: xx-large;
 }
 
-.paragraph__smaller--black {
+.header__paragraph__smaller--black {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold;
     opacity: 50%;
@@ -130,7 +130,7 @@ body {
 }
 
 .menu__option {
-    height: 3rem;
+    height: 4.5rem;
 
     display: flex;
     justify-content: center;
@@ -138,6 +138,8 @@ body {
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: bold; 
+
+    font-size: small;
 }
 
 .one__one {
@@ -146,30 +148,31 @@ body {
 
 .two__one {
     grid-area: offer;
-    opacity: 60%;
+    opacity: 50%;
 }
 
 .three__one {
     grid-area: why;
-    opacity: 60%;
+    opacity: 50%;
 }
 
 .four__one {
     grid-area: contact;
-    opacity: 60%;
+    opacity: 50%;
 }
 
 a:link {
     text-decoration: none;
-    color: black;
+}
+
+a:visited {
+    color: inherit;
 }
 
 a:hover {
-    color: black;
+    color:#000;
     opacity: 100%;
-
 }
-
 
 /* Menu 1 */
 
@@ -196,12 +199,12 @@ a:hover {
 
     margin-right: 3rem;
     margin-left: 3rem;
+    margin-bottom: 2rem;
 }
 
 .main__first__first {
     justify-self: center;
     width: 60%;
-
 }
 
 .main__first__big {
@@ -219,7 +222,6 @@ a:hover {
     font-size: small;
 
     place-self: center;
-
     margin-bottom: auto;
 }
 
@@ -248,7 +250,6 @@ a:hover {
     align-items: center;
 
     border-radius: 5px;
-
     box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -256,7 +257,6 @@ a:hover {
     height: 9rem;
     background: #C7DDEA;
     width: 14rem;
-
     margin-top: -30px;
     border-radius: 5px;
 
@@ -271,7 +271,6 @@ a:hover {
     height: 9rem;
     background: #FAB131;
     width: 14rem;
-
     margin-top: -30px;
     border-radius: 5px;
 
@@ -285,7 +284,6 @@ a:hover {
     height: 9rem;
     background: #F17949;
     width: 14rem;
-
     margin-top: -30px;
     border-radius: 5px;
 
@@ -334,8 +332,7 @@ a:hover {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     opacity: 60%;
     font-size: small;
-    font-weight: 500;
-
+    font-weight: 600;
     line-height: 20px;
 }
 
@@ -423,14 +420,9 @@ a:hover {
     display: grid;
     grid-template-areas: 
     ". . footer footer . .";
-
     grid-template-columns: repeat(6, 1fr);
 
     background: #A9A19E;
-    text-align: center;
-
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: smaller;
 
     background-image: url(../img/chevrons-up.svg);
     background-size: 20px;
@@ -441,6 +433,10 @@ a:hover {
 .footer__text {
     grid-area: footer;
     align-self: center;
+
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: smaller;
 }
 
 /* Footer */
@@ -461,31 +457,22 @@ a:hover {
 
 /* Header */
 
-.title--black--contact{
-    font-size: xx-large;
-    margin: auto;
-}
+.header__contact__blue {
+    height: 20rem;
+    display: flex;
+    flex-direction: column;    
 
-.header-contact__blue{
     background: #C7DDEA;
     background-image: url(../img/man-and-child.png);
     background-repeat: no-repeat;
-    height: 20rem;
     background-position: 90% 120%;
-    background-size: 11rem;
-
-    display: flex;
-    flex-direction: column;
-
+    background-size: 10.5rem;
 }
 
-
-
-.main__contact {
-    background-color: #A9A19E;
-
+.header__contact__title {
+    font-size: 45px;
+    margin: auto;
 }
-
 
 /* Header */
 
@@ -493,154 +480,156 @@ a:hover {
 
 .menu__contacts{
     background: white;
-
 }
 
 .menu__contacts .four__one{
     opacity: 100%;
-
 }
 
 .menu__contacts .one__one{
-    opacity: 60%;
-
+    opacity: 50%;
 }
-
 
 /* Menu 2 */
 
 /* Message */
 
-
-
 .main__message {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: #A9A19E;
     padding-left: 3rem;
     padding-right: 3rem;
-    height: 50%;
-    max-height: 35rem;
+    height: 35rem;
+    background-color: #A9A19E;
+
+    display: grid;
+    grid-template-areas:  
+    "contacts contacts contacts form form form";
+    grid-template-columns: repeat(6, 1fr);
     
 }
 
 .main__contact__title {
-    font-size: 30px;
-    color: white;
-    padding-top: 7rem;
-    margin-top: 0;
+    grid-area: contacts;
     width: 80%;
-    justify-self: center;
+    margin-top: 5rem;    
+    justify-self: center;    
 
+    font-size: 35px;
+    color: white;
+
+    line-height: 50px;
 }
 
 .main__contact__form {
+    grid-area: form;
+    width: 22rem;
+    padding-left: 2rem;
+
     display: flex;
     flex-direction: column;
-    width: 75%;
-    padding-left: 2rem;
     justify-content: center;
-
-}  
+} 
 
 
 .main__contact__text {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: small;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
+
+    opacity: 90%;
+
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
 .main__contact__email-form{
-    height: 2rem;
-    border: none;
-   border-radius: 3px;
+   height: 2rem;
+   border: none;
+   border-radius: 2px;
 }
 
-
 .main__contact__message-form{
-    height: 6rem;
+    height: 9rem;
     border: none;
-    border-radius: 3px;
-    
+    border-radius: 2px;
+}
+
+::placeholder {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: small;
+
+    padding-left: 1rem;
+    padding-top: 0.5rem;
 }
 
 
 .main__contact__send-button{
+    margin-top: 3rem;
+    width: 50%;    
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    align-self: flex-end;
+
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: x-small;
     font-weight: bold;
-    margin-top: 15%;
-    width: 50%;
-    border: none;
-    padding: 15px;
-    border-radius: 20px;
+
     box-shadow: 0px 3px rgba(0, 0, 0, 0.1);
     background: white;
-    align-self: flex-end;
 }
+
 /* Message */
 
 /* Map */
 
-
 .map-background-box {
     background-image: url(../img/map-contact.png);
-    height: 45%;
-    max-height: 35rem;
+    height: 25rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-
-    
 }
-
 
 .map-adress-box {
     background: #FAB131 ;
-    min-width: 15rem;
-    max-width: 20rem;
-    height: 11rem;
+    width: 20rem;
+    height: 13rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 25px;
+
     color: white;
-    margin-left: 10rem;
-    margin-bottom: 5rem;
-    padding-bottom: 4rem;
-}
 
-
-.map-arrow {
-    height: 5rem;
-    width: fit-content;
-    margin-right: auto;
-    padding-left: 6rem;
-    
+    margin-bottom: 7rem;
+    margin-left: 5rem;
 }
 
 .map-adress-box-header{
-    margin-top: 2rem;
-}
+    font-size: 45px;
 
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
 
 .map-adress-box-adress {
-
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: small;
-    font-weight: 500;
-    color: white;
-    margin: none
-    ;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin-top: 3px;
+    margin-left: 1.7rem;
+    margin-right: auto;
 }
+
+.map-arrow {
+    margin: 4rem;
+    margin-top: 5rem;
+}
+
 /* Map */
-
-/* End */
-
-
-
-/* End */
 
 /* PAGE 2 */
