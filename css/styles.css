@@ -520,6 +520,7 @@ a:hover {
     padding-left: 3rem;
     padding-right: 3rem;
     height: 50%;
+    max-height: 35rem;
     
 }
 
@@ -527,7 +528,9 @@ a:hover {
     font-size: 30px;
     color: white;
     padding-top: 7rem;
-  margin-top: 0;
+    margin-top: 0;
+    width: 80%;
+    justify-self: center;
 
 }
 
@@ -584,6 +587,7 @@ a:hover {
 .map-background-box {
     background-image: url(../img/map-contact.png);
     height: 45%;
+    max-height: 35rem;
     display: flex;
     flex-direction: row;
     align-items: center;
