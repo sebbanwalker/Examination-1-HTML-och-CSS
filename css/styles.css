@@ -151,7 +151,6 @@ body {
     opacity: 100%;
 }
 
-
 .two__one {
     grid-area: offer;
     opacity: 50%;
@@ -489,12 +488,9 @@ a:hover {
     background: white;
 }
 
-
-
 .menu__contacts .four__one{
     opacity: 100%;
 }
-
 
 .menu__contacts .one__one{
     opacity: 50%;
